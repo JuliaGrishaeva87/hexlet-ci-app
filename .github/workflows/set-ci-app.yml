@@ -1,12 +1,11 @@
-name: set-ci-app 
-on:
+name: set 
+on: 
 jobs:
   build:
     
-    runs-on: ubuntu-latest
+    runs-on: 
     steps: 
       - uses:
       - run: make setup
       - run: make lint
-      - name: run test
-        run: make test
+      - run: make test
